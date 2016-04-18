@@ -1,0 +1,31 @@
+{
+    "name": "mekras/php-systemd",
+    "description": "Object-oriented PHP interface to systemd",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["systemd"],
+    "authors": [
+        {
+            "name": "Михаил Красильников",
+            "email": "m.krasilnikov@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mekras\\SystemD\\": "src"
+        },
+        "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mekras\\SystemD\\Tests\\": "tests"
+        }
+    }
+}
